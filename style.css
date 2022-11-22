@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(23,23,121,1) 17%, rgba(0,212,255,1) 100%);
+}
+
+.card{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.55);
+    transition: 0.5s;
+}
+
+.card:hover{
+    height: 400px;
+}
+
+.imgBx{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .imgBx{
+    width: 200px;
+    height: 200px;
+}
+
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card .content .datails{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+
+.card:hover .content .datails{
+    transform: translateY(0px);
+}
+
+.card .content .datails h2{
+    font-size: 1.25rem;
+    font-weight: 600px;
+    color: #555;
+    line-height: 1.2rem;
+}
+
+.card .content .datails h2 span{
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.card .content .datails .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card .content .datails h3{
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.2rem;
+    font-weight: 600;
+}
+
+.card .content .datails h3 span{
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.card .content .datails .actionBtn{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card .content .datails .actionBtn button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500px;
+    background: rgba(0,212,255,1);
+    color: #fff;
+    cursor: pointer;
+}
+
+.card .content .datails .actionBtn button:nth-child(2){
+    border: 1px solid #999;
+    background: #fff;
+    color: #999;
+}
