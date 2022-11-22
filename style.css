@@ -13,7 +13,9 @@ body{
     align-items: center;
     min-height: 100vh;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(23,23,121,1) 17%, rgba(0,212,255,1) 100%);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 45%, rgba(23,23,121,1) 100%, rgba(0,212,255,1) 100%);
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(23,23,121,1) 17%, rgba(0,212,255,1) 100%); */
 }
 
 .card{
@@ -33,7 +35,7 @@ body{
 .imgBx{
     position: absolute;
     left: 50%;
-    top: -50px;
+    top: -60px;
     transform: translateX(-50%);
     width: 150px;
     height: 150px;
@@ -45,8 +47,8 @@ body{
 }
 
 .card:hover .imgBx{
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
 }
 
 .imgBx img{
@@ -125,7 +127,7 @@ body{
     outline: none;
     font-size: 1rem;
     font-weight: 500px;
-    background: rgba(0,212,255,1);
+    background: rgba(2,0,36,1);
     color: #fff;
     cursor: pointer;
 }
